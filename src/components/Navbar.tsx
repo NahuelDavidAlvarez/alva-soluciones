@@ -1,43 +1,53 @@
-import { BrowserRouter as Router, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export function Navbar() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
+
   return (
     <nav className="bg-primary text-white py-4 px-4 sm:px-6 lg:px-8 shadow-md sticky top-0 z-50">
       <div className="max-w-[1600px] mx-auto flex justify-between items-center">
         {/* Logo/Título a la izquierda */}
-        <Link
-          to="/"
-          className="text-xl font-bold hover:text-accent transition-colors"
+        <button
+          onClick={() => scrollToSection('hero')}
+          className="text-xl font-bold hover:text-accent transition-colors cursor-pointer"
         >
           Escala Digital
-        </Link>
+        </button>
 
         {/* Menú de navegación a la derecha */}
         <div className="hidden md:flex space-x-8">
-          <Link
-            to="/"
-            className="hover:text-accent transition-colors duration-200 font-medium"
+          <button
+            onClick={() => scrollToSection('hero')}
+            className="hover:text-accent transition-colors duration-200 font-medium cursor-pointer"
           >
             Inicio
-          </Link>
-          <Link
-            to="/about"
-            className="hover:text-accent transition-colors duration-200 font-medium"
-          >
-            Nosotros
-          </Link>
-          <Link
-            to="/services"
-            className="hover:text-accent transition-colors duration-200 font-medium"
+          </button>
+          <button
+            onClick={() => scrollToSection('services')}
+            className="hover:text-accent transition-colors duration-200 font-medium cursor-pointer"
           >
             Servicios
-          </Link>
-          <Link
-            to="/contact"
-            className="hover:text-accent transition-colors duration-200 font-medium"
+          </button>
+          <button
+            onClick={() => scrollToSection('about')}
+            className="hover:text-accent transition-colors duration-200 font-medium cursor-pointer"
+          >
+            Nosotros
+          </button>
+          <button
+            onClick={() => scrollToSection('contact')}
+            className="hover:text-accent transition-colors duration-200 font-medium cursor-pointer"
           >
             Contacto
-          </Link>
+          </button>
         </div>
 
         {/* Menú móvil (hamburguesa) */}
