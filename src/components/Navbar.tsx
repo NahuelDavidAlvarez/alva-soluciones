@@ -15,9 +15,14 @@ export function Navbar() {
         {/* Logo/Título a la izquierda */}
         <button
           onClick={() => scrollToSection('hero')}
-          className="text-xl font-bold hover:text-accent transition-colors cursor-pointer"
+          className="flex items-center space-x-3 hover:text-accent transition-colors cursor-pointer"
         >
-          Escala Digital
+          <img
+            src="/EscalaDigital.png"
+            alt="Escala Digital Logo"
+            className="w-16 h-16 object-contain"
+          />
+          <span className="text-xl font-bold">Escala Digital</span>
         </button>
 
         {/* Menú de navegación a la derecha */}
