@@ -222,51 +222,17 @@ export function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="flex justify-center lg:justify-start"
             >
-              <div className="relative">
-                <motion.div
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.3 }}
-                  className="relative w-80 h-80 md:w-96 md:h-96 rounded-3xl overflow-hidden shadow-2xl ring-4 ring-accent/20"
-                >
-                  <img
-                    src="/src/assets/DavidFundador.jpg"
-                    alt="David Nahuel Alvarez - Fundador de Escala Digital"
-                    className="w-full h-full object-cover object-center filter brightness-105 contrast-105"
-                  />
-
-                  {/* Overlay gradient for better text contrast if needed */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent"></div>
-                </motion.div>
-
-                {/* Decorative elements */}
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{
-                    duration: 20,
-                    repeat: Infinity,
-                    ease: 'linear'
-                  }}
-                  className="absolute -top-6 -right-6 w-16 h-16 bg-gradient-to-br from-accent to-accent/60 rounded-2xl opacity-20 blur-sm"
-                ></motion.div>
-                <motion.div
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: 'easeInOut'
-                  }}
-                  className="absolute -bottom-6 -left-6 w-12 h-12 bg-gradient-to-br from-accent to-accent/80 rounded-xl opacity-30 blur-sm"
-                ></motion.div>
-                <motion.div
-                  animate={{ scale: [1, 1.1, 1] }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: 'easeInOut'
-                  }}
-                  className="absolute top-1/2 -right-8 w-6 h-6 bg-accent rounded-full opacity-40"
-                ></motion.div>
-              </div>
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+                className="w-80 h-80 md:w-96 md:h-96 rounded-3xl overflow-hidden shadow-2xl"
+              >
+                <img
+                  src="/src/assets/DavidFundador.jpg"
+                  alt="David Nahuel Alvarez - Fundador de Escala Digital"
+                  className="w-full h-full object-cover object-center"
+                />
+              </motion.div>
             </motion.div>
 
             {/* Descripción */}
