@@ -5,6 +5,7 @@ import { Home } from './pages/Home.jsx'
 import { Services } from './pages/Services.jsx'
 import { Contact } from './pages/Contact.jsx'
 import { Navbar } from './components/Navbar.js'
+import { Whatsappwidget } from './components/WhatsAppWidget.js'
 import './index.css'
 
 type PageWrapperProps = {
@@ -42,6 +43,9 @@ export default function App() {
             }
           />
         </Routes>
+
+        {/* Widget de WhatsApp - se muestra en todas las páginas */}
+        <Whatsappwidget />
       </div>
     </Router>
   )
