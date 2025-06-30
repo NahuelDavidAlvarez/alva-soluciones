@@ -25,16 +25,16 @@ export function Home() {
 
   const services = [
     {
-      title: 'Marketing Digital',
-      description:
-        'Estrategias personalizadas para hacer crecer tu presencia digital y alcanzar nuevas alturas en el mercado.',
-      icon: '📈'
-    },
-    {
       title: 'Desarrollo Web',
       description:
         'Sitios web modernos y responsivos que reflejan la esencia de tu marca con tecnología de vanguardia.',
       icon: '💻'
+    },
+    {
+      title: 'Marketing Digital',
+      description:
+        'Estrategias personalizadas para hacer crecer tu presencia digital y alcanzar nuevas alturas en el mercado.',
+      icon: '📈'
     },
     {
       title: 'SEO & Analytics',
@@ -208,8 +208,7 @@ export function Home() {
               Sobre Mí
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Conoce la historia detrás de Escala Digital y mi pasión por
-              transformar negocios
+              Te cuento mi historia y mis experiencias
             </p>
           </motion.div>
 
@@ -254,50 +253,35 @@ export function Home() {
 
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Con más de 10 años de experiencia en el mundo del marketing
-                  digital, he tenido el privilegio de ayudar a más de 200
-                  empresas a transformar su presencia online y alcanzar sus
-                  objetivos de crecimiento.
+                  Durante más de diez años trabajé en empresas del mundo
+                  digital, financiero y del marketing, especialmente en bancos
+                  como BBVA y Supervielle. Esa experiencia me permitió
+                  comprender en profundidad los flujos de trabajo y la
+                  organización interna de grandes equipos. Con ese conocimiento,
+                  decidí emprender para aplicar todo lo aprendido en ofrecer
+                  soluciones prácticas y efectivas al mercado actual. Mi
+                  filosofía se basa en aumentar la presencia online de mis
+                  clientes y ayudarlos a alcanzar objetivos reales de
+                  crecimiento.
                 </p>
-
                 <p>
-                  Mi pasión por la tecnología y el marketing comenzó durante el
-                  avance de mi carrera laboral, donde descubrí el poder de
-                  combinar la creatividad con el análisis de datos para generar
-                  resultados extraordinarios.
+                  Hoy en día existen muchas herramientas y tecnologías para
+                  tener presencia en internet. Si bien soy desarrollador y tengo
+                  un perfil técnico, evito entrar en tecnicismos innecesarios.
+                  Lo importante es elegir la herramienta adecuada para cada
+                  objetivo. Cuento con un abanico de soluciones amplio y
+                  flexible, encontraremos la opción más conveniente para tu
+                  caso.
                 </p>
-
                 <p>
-                  Fundé Escala Digital con la visión de democratizar el acceso a
-                  estrategias de marketing de alto nivel, especialmente para
-                  Autonomos, PyMEs y emprendedores que buscan competir en el
-                  mercado digital actual, mi servicio incluye un asesoramiento
-                  constante y estrategias de evolucion de acuerdo al rubro y al
-                  mercado, con un criterio enfocado en escalar tu negocio
+                  Mis servicios están pensados para profesionales, autónomos,
+                  comercios, empresas y emprendedores que quieren competir en el
+                  mercado digital actual. Ofrezco un acompañamiento constante,
+                  con estrategias adaptadas a cada rubro y a cada etapa del
+                  negocio, siempre con una mirada puesta en escalar y
+                  evolucionar.
                 </p>
               </div>
-
-              {/* Estadísticas */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200"
-              >
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-accent">200+</div>
-                  <div className="text-sm text-gray-600">Proyectos</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-accent">8+</div>
-                  <div className="text-sm text-gray-600">Años</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-accent">95%</div>
-                  <div className="text-sm text-gray-600">Satisfacción</div>
-                </div>
-              </motion.div>
 
               {/* Certificaciones o habilidades */}
               <motion.div
@@ -312,12 +296,17 @@ export function Home() {
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    'Google Ads',
-                    'Facebook Ads',
+                    'Creacion de Webs',
+                    'Diseño',
+                    'Wordpress',
+                    'WooCommerce',
+                    'Shopify',
                     'SEO',
-                    'Analytics',
-                    'Automation',
-                    'Branding'
+                    'Google Ads',
+                    'Creacion de Apps',
+                    'Redes Sociales',
+                    'Facebook Ads',
+                    'Campañas Estrategicas'
                   ].map((skill, index) => (
                     <motion.span
                       key={skill}
