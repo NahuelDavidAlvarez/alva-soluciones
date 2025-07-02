@@ -7,8 +7,8 @@ module.exports = {
     extend: {
       colors: {
         primary: '#0f172a', // azul oscuro (como base)
-        accent: '#8193d4' // celeste más oscuro
-        /*  accent: '#38bdf8' // celeste claro */
+        accent: '#8193d4', // celeste más oscuro
+        'accent-light': '#38bdf8' // celeste claro
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif']

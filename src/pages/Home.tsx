@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
+import { Contact } from '../components/Contact'
 
 export function Home() {
   const [isVisible, setIsVisible] = useState(false)
@@ -326,32 +327,8 @@ export function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section id="contact" className="py-20 bg-accent">
-        <div className="max-w-4xl mx-auto text-center px-4 md:px-8 lg:px-12">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              ¿Listo para Escalar?
-            </h2>
-            <p className="text-xl text-primary/80 mb-8">
-              Comienza tu transformación digital hoy y lleva tu negocio al
-              siguiente nivel
-            </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-primary text-white px-10 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Contacta con Nosotros
-            </motion.button>
-          </motion.div>
-        </div>
-      </section>
+      {/* Contact Section */}
+      <Contact />
     </div>
   )
 }

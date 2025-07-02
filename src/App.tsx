@@ -3,7 +3,6 @@ import { ReactNode } from 'react'
 import { motion } from 'framer-motion'
 import { Home } from './pages/Home'
 import { Services } from './pages/Services'
-import { Contact } from './pages/Contact'
 import { Navbar } from './components/Navbar'
 import { WhatsAppWidget } from './components/WhatsAppWidget'
 import './index.css'
@@ -31,14 +30,6 @@ export default function App() {
             element={
               <PageWrapper>
                 <Services />
-              </PageWrapper>
-            }
-          />
-          <Route
-            path="/contact"
-            element={
-              <PageWrapper>
-                <Contact />
               </PageWrapper>
             }
           />
