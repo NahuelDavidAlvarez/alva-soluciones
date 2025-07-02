@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Contact } from '../components/Contact'
 
 export function Home() {
@@ -50,6 +50,8 @@ export function Home() {
       icon: '🎨'
     }
   ]
+
+  const servicesRef = useRef<HTMLElement>(null)
 
   return (
     <div className="min-h-screen">
@@ -129,6 +131,7 @@ export function Home() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <motion.button
+              onClick={() => window.open('https://wa.me/5491166629173', '_blank')}
               whileHover={{
                 scale: 1.05,
                 boxShadow: '0 20px 40px rgba(56, 189, 248, 0.3)'
@@ -139,9 +142,10 @@ export function Home() {
               Comenzar Ahora
             </motion.button>
             <motion.button
+              onClick={() => servicesRef.current?.scrollIntoView({ behavior: 'smooth' })}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="border-2 border-accent text-accent px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-accent hover:text-primary transition-all duration-300"
+              className="border-2 border-accent text-accent px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-accent hover:text-primary transition-all duration-300 hover:shadow-xl hover:shadow-accent/30"
             >
               Ver Servicios
             </motion.button>
@@ -150,7 +154,7 @@ export function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-white">
+      <section ref={servicesRef} id="services" className="py-20 bg-white">
         <div className="px-4 md:px-8 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 50 }}

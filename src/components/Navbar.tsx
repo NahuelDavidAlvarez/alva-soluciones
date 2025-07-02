@@ -1,16 +1,22 @@
+import { useRef, useEffect } from 'react'
+
 export function Navbar() {
+  const navRef = useRef<HTMLElement>(null)
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+    if (element && navRef.current) {
+      const navbarHeight = navRef.current.offsetHeight
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
+      window.scrollTo({
+        top: elementPosition - navbarHeight,
+        behavior: 'smooth'
       })
     }
   }
 
   return (
-    <nav className="bg-primary text-white py-4 px-4 sm:px-6 lg:px-8 shadow-md sticky top-0 z-50">
+    <nav ref={navRef} className="bg-primary text-white py-4 px-4 sm:px-6 lg:px-8 shadow-md sticky top-0 z-50">
       <div className="max-w-[1600px] mx-auto flex justify-between items-center">
         {/* Logo/Título a la izquierda */}
         <button
