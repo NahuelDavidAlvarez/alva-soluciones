@@ -6,9 +6,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#0f172a', // azul oscuro (como base)
-        accent: '#8193d4', // celeste más oscuro
-        'accent-light': '#38bdf8' // celeste claro
+        'primary': '#150E03',
+        'primary-focus': '#705843',
+        'secondary': '#70663A',
+        'accent': '#C49F7A',
+        'neutral': '#91806B',
+        'base-100': '#F1EAD8',
+        'base-200': '#CFC6B1',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif']

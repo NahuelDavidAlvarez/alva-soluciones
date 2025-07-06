@@ -22,7 +22,7 @@ export function Navbar() {
   }
 
   return (
-    <nav ref={navRef} className="bg-primary text-white py-4 px-4 sm:px-6 lg:px-8 shadow-md sticky top-0 z-50">
+    <nav ref={navRef} className="bg-primary text-base-100 py-4 px-4 sm:px-6 lg:px-8 shadow-md sticky top-0 z-50">
       <div className="max-w-[1600px] mx-auto flex justify-between items-center">
         {/* Logo/Título a la izquierda */}
         <button
@@ -67,7 +67,7 @@ export function Navbar() {
 
         {/* Menú móvil (hamburguesa) */}
         <div className="md:hidden">
-          <button onClick={toggleMobileMenu} className="text-white hover:text-accent transition-colors">
+          <button onClick={toggleMobileMenu} className="text-base-100 hover:text-accent transition-colors">
             <svg
               className="w-6 h-6"
               fill="none"

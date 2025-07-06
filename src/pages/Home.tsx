@@ -58,7 +58,7 @@ export function Home() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 scroll-mt-64"
+        className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-base-200 to-primary scroll-mt-64"
       >
         {/* Animated Background */}
         <div className="absolute inset-0 opacity-20">
@@ -75,7 +75,7 @@ export function Home() {
               transition={{ duration: 3, ease: 'easeInOut' }}
               d="M0,400 L0,300 L200,110 L400,180 L600,30 L800,130 L1000,1 L1200,90 L1200,500 Z"
               fill="url(#mountainGradient)"
-              stroke="rgba(56, 189, 248, 0.5)"
+              stroke="rgba(196, 159, 122, 0.5)"
               strokeWidth="2"
             />
             <defs>
@@ -86,8 +86,8 @@ export function Home() {
                 x2="0%"
                 y2="100%"
               >
-                <stop offset="0%" stopColor="rgba(56, 189, 248, 0.3)" />
-                <stop offset="100%" stopColor="rgba(15, 23, 42, 0.8)" />
+                <stop offset="0%" stopColor="rgba(196, 159, 122, 0.3)" />
+                <stop offset="100%" stopColor="rgba(21, 14, 3, 0.8)" />
               </linearGradient>
             </defs>
           </svg>
@@ -103,14 +103,14 @@ export function Home() {
           <motion.h1
             variants={fadeInUp}
             transition={{ duration: 0.8 }}
-            className="text-6xl md:text-8xl font-bold text-white mb-6"
+            className="text-6xl md:text-8xl font-bold text-base-100 mb-6"
           >
             Refuerzo
             <motion.span
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="text-accent block"
+              className="text-base-100 block"
             >
               Digital
             </motion.span>
@@ -119,7 +119,7 @@ export function Home() {
           <motion.p
             variants={fadeInUp}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed"
+            className="text-xl md:text-2xl text-primary mb-8 leading-relaxed"
           >
             Llevamos tu negocio a nuevas alturas con estrategias digitales
             innovadoras
@@ -136,7 +136,7 @@ export function Home() {
               }
               whileHover={{
                 scale: 1.05,
-                boxShadow: '0 20px 40px rgba(56, 189, 248, 0.3)'
+                boxShadow: '0 20px 40px rgba(196, 159, 122, 0.3)'
               }}
               whileTap={{ scale: 0.95 }}
               className="bg-accent text-primary px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
@@ -147,9 +147,12 @@ export function Home() {
               onClick={() =>
                 servicesRef.current?.scrollIntoView({ behavior: 'smooth' })
               }
-              whileHover={{ scale: 1.05 }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: '0 20px 40px rgba(196, 159, 122, 0.3)'
+              }}
               whileTap={{ scale: 0.95 }}
-              className="border-2 border-accent text-accent px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-accent hover:text-primary transition-all duration-300 hover:shadow-xl hover:shadow-accent/30"
+              className="bg-accent text-primary px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Ver Servicios
             </motion.button>
@@ -161,7 +164,7 @@ export function Home() {
       <section
         ref={servicesRef}
         id="services"
-        className="py-20 bg-white scroll-mt-20"
+        className="py-20 bg-base-100 scroll-mt-20"
       >
         <div className="px-4 md:px-8 lg:px-12">
           <motion.div
@@ -172,9 +175,9 @@ export function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              Nuestros Servicios
+              Servicios
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-neutral max-w-3xl mx-auto">
               Soluciones integrales de marketing digital diseñadas para impulsar
               tu crecimiento
             </p>
@@ -189,13 +192,13 @@ export function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -10, scale: 1.02 }}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-accent/20 backdrop-blur-sm"
+                className="bg-base-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-200 hover:border-accent/20 backdrop-blur-sm"
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold text-primary mb-4">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-neutral leading-relaxed">
                   {service.description}
                 </p>
               </motion.div>
@@ -207,7 +210,7 @@ export function Home() {
       {/* About Section */}
       <section
         id="about"
-        className="py-20 bg-gradient-to-br from-gray-50 to-white scroll-mt-20"
+        className="py-20 bg-gradient-to-br from-base-200 to-base-100 scroll-mt-20"
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
           <motion.div
@@ -220,7 +223,7 @@ export function Home() {
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
               Sobre Mí
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-neutral max-w-3xl mx-auto">
               Te cuento mi historia y mis experiencias
             </p>
           </motion.div>
@@ -264,7 +267,7 @@ export function Home() {
                 </p>
               </div>
 
-              <div className="space-y-4 text-gray-700 leading-relaxed">
+              <div className="space-y-4 text-secondary leading-relaxed">
                 <p>
                   Durante más de diez años trabajé en empresas del mundo
                   digital, financiero y del marketing, especialmente en bancos
