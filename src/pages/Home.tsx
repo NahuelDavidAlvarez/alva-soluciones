@@ -201,7 +201,7 @@ export function Home() {
               Sobre Mí
             </h2>
             <p className="text-xl text-neutral max-w-3xl mx-auto">
-              Te cuento mi historia y mis experiencias
+              Te cuento mi historia y mis experiencia
             </p>
           </motion.div>
 
