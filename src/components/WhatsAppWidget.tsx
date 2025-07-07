@@ -98,7 +98,7 @@ export function WhatsAppWidget({ size = 'md' }: WhatsappWidgetProps) {
           transition={{ delay: 1 }}
           className="absolute right-full top-1/2 transform -translate-y-1/2 mr-4 bg-gray-800 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap pointer-events-none hidden md:block"
         >
-          ¿Hablamos?
+          WhatsApp
           <div className="absolute left-full top-1/2 transform -translate-y-1/2 w-2 h-2 bg-gray-800 rotate-45" />
         </motion.div>
       </motion.div>
