@@ -141,7 +141,7 @@ export function Home() {
               whileTap={{ scale: 0.95 }}
               className="bg-accent text-primary px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              Comenzar Ahora
+              Hablemos
             </motion.button>
             <motion.button
               onClick={() =>
@@ -154,7 +154,7 @@ export function Home() {
               whileTap={{ scale: 0.95 }}
               className="bg-accent text-primary px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              Ver Servicios
+              Servicios
             </motion.button>
           </motion.div>
         </motion.div>

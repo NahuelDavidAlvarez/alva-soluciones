@@ -8,7 +8,8 @@ export function Navbar() {
     const element = document.getElementById(sectionId)
     if (element && navRef.current) {
       const navbarHeight = navRef.current.offsetHeight
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
+      const elementPosition =
+        element.getBoundingClientRect().top + window.pageYOffset
       window.scrollTo({
         top: elementPosition - navbarHeight,
         behavior: 'smooth'
@@ -22,7 +23,10 @@ export function Navbar() {
   }
 
   return (
-    <nav ref={navRef} className="bg-primary text-base-100 py-4 px-4 sm:px-6 lg:px-8 shadow-md sticky top-0 z-50">
+    <nav
+      ref={navRef}
+      className="bg-primary text-base-100 py-4 px-4 sm:px-6 lg:px-8 shadow-md sticky top-0 z-50"
+    >
       <div className="max-w-[1600px] mx-auto flex justify-between items-center">
         {/* Logo/Título a la izquierda */}
         <button
@@ -67,7 +71,10 @@ export function Navbar() {
 
         {/* Menú móvil (hamburguesa) */}
         <div className="md:hidden">
-          <button onClick={toggleMobileMenu} className="text-base-100 hover:text-accent transition-colors">
+          <button
+            onClick={toggleMobileMenu}
+            className="text-base-100 hover:text-accent transition-colors"
+          >
             <svg
               className="w-6 h-6"
               fill="none"
@@ -78,7 +85,11 @@ export function Navbar() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d={isMobileMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
+                d={
+                  isMobileMenuOpen
+                    ? 'M6 18L18 6M6 6l12 12'
+                    : 'M4 6h16M4 12h16M4 18h16'
+                }
               />
             </svg>
           </button>
