@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect, useRef } from 'react'
 import { Contact } from '../components/Contact'
+import { FaLaptopCode, FaChartLine, FaChartBar, FaPaintBrush } from 'react-icons/fa'
 
 export function Home() {
   const [isVisible, setIsVisible] = useState(false)
@@ -29,25 +30,25 @@ export function Home() {
       title: 'Desarrollo Web',
       description:
         'Sitios web modernos y responsivos que reflejan la esencia de tu marca con tecnología de vanguardia.',
-      icon: '💻'
+      icon: <FaLaptopCode className="text-4xl text-primary" />
     },
     {
       title: 'Marketing Digital',
       description:
         'Estrategias personalizadas para hacer crecer tu presencia digital y alcanzar nuevas alturas en el mercado.',
-      icon: '📈'
+      icon: <FaChartLine className="text-4xl text-primary" />
     },
     {
       title: 'SEO & Analiticas',
       description:
         'Optimización para motores de búsqueda y análisis de datos para escalar tu negocio de manera inteligente.',
-      icon: '🔍'
+      icon: <FaChartBar className="text-4xl text-primary" />
     },
     {
       title: 'Diseño',
       description:
         'Construimos identidades de marca sólidas que conectan emocionalmente con tu audiencia objetivo.',
-      icon: '🎨'
+      icon: <FaPaintBrush className="text-4xl text-primary" />
     }
   ]
 
@@ -60,38 +61,10 @@ export function Home() {
         id="hero"
         className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-base-200 to-primary scroll-mt-64"
       >
+        {/* Overlay for intermediate darkness */}
+        <div className="absolute inset-0 bg-primary opacity-30"></div>
         {/* Animated Background */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-transparent"></div>
-          {/* Mountain SVG */}
-          <svg
-            className="absolute bottom-0 w-full h-96"
-            viewBox="0 0 1200 400"
-            preserveAspectRatio="none"
-          >
-            <motion.path
-              initial={{ pathLength: 0, opacity: 0 }}
-              animate={{ pathLength: 1, opacity: 1 }}
-              transition={{ duration: 3, ease: 'easeInOut' }}
-              d="M0,400 L0,300 L200,110 L400,180 L600,30 L800,130 L1000,1 L1200,90 L1200,500 Z"
-              fill="url(#mountainGradient)"
-              stroke="rgba(196, 159, 122, 0.5)"
-              strokeWidth="2"
-            />
-            <defs>
-              <linearGradient
-                id="mountainGradient"
-                x1="0%"
-                y1="0%"
-                x2="0%"
-                y2="100%"
-              >
-                <stop offset="0%" stopColor="rgba(196, 159, 122, 0.3)" />
-                <stop offset="100%" stopColor="rgba(21, 14, 3, 0.8)" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
+        
 
         {/* Main Content */}
         <motion.div
