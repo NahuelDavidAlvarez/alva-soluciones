@@ -43,7 +43,7 @@ export function Navbar() {
           <img
             src="/RefuerzoDigital.png"
             alt="Refuerzo Digital Logo"
-            className="w-12 h-12 object-contain"
+            className="w-14 h-14 object-contain"
           />
           <span className="text-xl font-bold">Refuerzo Digital</span>
         </button>
