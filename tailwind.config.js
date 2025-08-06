@@ -13,7 +13,9 @@ module.exports = {
         'base-200': '#D8DEE4'       // Metal Pulido
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif']
+        sans: ['Inter', 'sans-serif'],
+        serif: ['EB Garamond', 'serif'],
+        body: ['Roboto', 'sans-serif'],
       }
     }
   },

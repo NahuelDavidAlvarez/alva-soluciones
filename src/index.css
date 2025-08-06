@@ -5,3 +5,13 @@
 body {
   @apply bg-base-100;
 }
+
+/* Estilos para nuka-carousel */
+.slider-list,
+.slider-slide {
+  height: 100% !important;
+}
+
+.slider-slide > div {
+  height: 100%;
+}

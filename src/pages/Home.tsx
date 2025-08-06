@@ -183,6 +183,77 @@ export function Home() {
         </div>
       </section>
 
+      {/* Examples Section */}
+      <section id="examples" className="py-20 bg-base-200 scroll-mt-20">
+        <div className="px-4 md:px-8 lg:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+              Ejemplos
+            </h2>
+            <p className="text-xl text-neutral max-w-3xl mx-auto">
+              Mirá algunos ejemplos de lo que podemos construir juntos.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              whileHover={{ y: -10, scale: 1.02 }}
+              className="bg-base-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-200 hover:border-accent/20 backdrop-blur-sm"
+            >
+              <h3 className="text-xl font-bold text-primary mb-4">
+                E-commerce
+              </h3>
+              <p className="text-neutral leading-relaxed mb-4">
+                Una tienda online completa para vender tus productos.
+              </p>
+              <a href="/ejemplo-ecommerce" className="text-primary font-bold hover:underline">Ver ejemplo</a>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              whileHover={{ y: -10, scale: 1.02 }}
+              className="bg-base-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-200 hover:border-accent/20 backdrop-blur-sm"
+            >
+              <h3 className="text-xl font-bold text-primary mb-4">
+                Profesionales
+              </h3>
+              <p className="text-neutral leading-relaxed mb-4">
+                Potenciá tu marca personal y conectá con más clientes. Una web a medida para abogados, médicos, odontólogos, y más.
+              </p>
+              <a href="/ejemplo-profesionales" className="text-primary font-bold hover:underline">Ver ejemplo</a>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              whileHover={{ y: -10, scale: 1.02 }}
+              className="bg-base-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-200 hover:border-accent/20 backdrop-blur-sm"
+            >
+              <h3 className="text-xl font-bold text-primary mb-4">
+                Institucional
+              </h3>
+              <p className="text-neutral leading-relaxed mb-4">
+                Una web para presentar tu organización o empresa.
+              </p>
+              <a href="/ejemplo-institucional" className="text-primary font-bold hover:underline">Ver ejemplo</a>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section
         id="about"
