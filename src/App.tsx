@@ -13,8 +13,8 @@ import NavbarEjemplo from './components/NavbarEjemplo'
 import { WhatsAppWidget } from './components/WhatsAppWidget'
 import './index.css'
 import EjemploEcommerce from './pages/EjemploEcommerce'
-import EjemploProfesionales from './pages/EjemploInstitucional'
-import EjemploInstitucional from './pages/EjemploProfesionales'
+import EjemploProfesionales from './pages/EjemploProfesionales'
+import EjemploInstitucional from './pages/EjemploInstitucional'
 
 // Define color themes for examples
 const themes = {
@@ -67,7 +67,7 @@ function AppLayout() {
         <NavbarEjemplo
           bgColor={theme.bgColor}
           textColor={theme.textColor}
-          logoText={theme.textColor}
+          logoText={theme.pageText}
         />
       ) : (
         <Navbar />
