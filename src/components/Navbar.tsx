@@ -42,10 +42,10 @@ export function Navbar() {
         >
           <img
             src="/LogoWhite.svg"
-            alt="Refuerzo Digital Logo"
-            className="w-14 h-14 object-contain"
+            alt="Alva Soluciones Logo"
+            className="w-20 h-16 md:w-18 md:h-16 object-contain"
           />
-          <span className="text-xl font-bold">Refuerzo Digital</span>
+          <span className="text-lg md:text-xl font-bold font-montserrat">Soluciones</span>
         </button>
 
         {/* Menú de navegación a la derecha */}

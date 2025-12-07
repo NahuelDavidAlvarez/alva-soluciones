@@ -82,14 +82,14 @@ export function Home() {
             transition={{ duration: 0.8 }}
             className="text-6xl md:text-8xl font-bold text-base-100 mb-6"
           >
-            Refuerzo
+            Servicios
             <motion.span
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
               className="text-base-100 block"
             >
-              Digital
+              Digitales
             </motion.span>
           </motion.h1>
 
@@ -182,200 +182,110 @@ export function Home() {
           </div>
         </div>
       </section>
-
-      {/* Examples Section */}
-      <section id="examples" className="py-20 bg-base-200 scroll-mt-20">
-        <div className="px-4 md:px-8 lg:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              Ejemplos
-            </h2>
-            <p className="text-xl text-neutral max-w-3xl mx-auto">
-              Mirá algunos ejemplos de lo que podemos construir juntos.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              whileHover={{ y: -10, scale: 1.02 }}
-              className="bg-base-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-200 hover:border-accent/20 backdrop-blur-sm"
-            >
-              <h3 className="text-xl font-bold text-primary mb-4">
-                E-commerce
-              </h3>
-              <p className="text-neutral leading-relaxed mb-4">
-                Una tienda online completa para vender tus productos.
-              </p>
-              <a href="/ejemplo-ecommerce" className="text-primary font-bold hover:underline">Ver ejemplo</a>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              whileHover={{ y: -10, scale: 1.02 }}
-              className="bg-base-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-200 hover:border-accent/20 backdrop-blur-sm"
-            >
-              <h3 className="text-xl font-bold text-primary mb-4">
-                Profesionales
-              </h3>
-              <p className="text-neutral leading-relaxed mb-4">
-                Potenciá tu marca personal y conectá con más clientes. Una web a medida para abogados, médicos, odontólogos, y más.
-              </p>
-              <a href="/ejemplo-profesionales" className="text-primary font-bold hover:underline">Ver ejemplo</a>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              whileHover={{ y: -10, scale: 1.02 }}
-              className="bg-base-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-200 hover:border-accent/20 backdrop-blur-sm"
-            >
-              <h3 className="text-xl font-bold text-primary mb-4">
-                Institucional
-              </h3>
-              <p className="text-neutral leading-relaxed mb-4">
-                Una web para presentar tu organización o empresa.
-              </p>
-              <a href="/ejemplo-institucional" className="text-primary font-bold hover:underline">Ver ejemplo</a>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
+      {/* New About Section - Alva Soluciones */}
       <section
         id="about"
         className="py-20 bg-gradient-to-br from-base-200 to-base-100 scroll-mt-20"
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+          {/* Header - Alva Soluciones */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              Sobre Mí
+              Sobre Nosotros
             </h2>
-            <p className="text-xl text-neutral max-w-3xl mx-auto">
-              Te cuento mi historia y experiencia
+            <p className="text-xl text-neutral max-w-4xl mx-auto leading-relaxed">
+              En <span className="font-bold text-primary">Alva Soluciones</span>,
+              somos una startup de servicios digitales enfocada en transformar ideas en activos digitales rentables.
+              Combinamos tecnología de vanguardia con visión estratégica para impulsar el crecimiento de negocios, emprendedores y empresas.
             </p>
           </motion.div>
-
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Foto */}
+          {/* Pillars / Values Section */}
+          <div className="grid md:grid-cols-3 gap-8 mb-20">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex justify-center lg:justify-start"
+              transition={{ delay: 0.1 }}
+              className="bg-base-100 p-8 rounded-2xl shadow-lg border-t-4 border-primary text-center"
             >
+              <h3 className="text-2xl font-bold text-primary mb-4">Innovación</h3>
+              <p className="text-neutral">Aplicamos las últimas tecnologías y tendencias para mantener a nuestros clientes por delante de la competencia.</p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-base-100 p-8 rounded-2xl shadow-lg border-t-4 border-primary text-center"
+            >
+              <h3 className="text-2xl font-bold text-primary mb-4">Estrategia</h3>
+              <p className="text-neutral">No solo desarrollamos software; creamos soluciones alineadas con objetivos comerciales claros y medibles.</p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="bg-base-100 p-8 rounded-2xl shadow-lg border-t-4 border-primary text-center"
+            >
+              <h3 className="text-2xl font-bold text-primary mb-4">Calidad</h3>
+              <p className="text-neutral">Código limpio, diseño premium y una experiencia de usuario optimizada son nuestros estándares no negociables.</p>
+            </motion.div>
+          </div>
+
+          {/* Founder Section */}
+          <div className="bg-base-100 rounded-3xl shadow-xl overflow-hidden">
+            <div className="grid lg:grid-cols-2 items-center">
+              {/* Image Column */}
               <motion.div
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-                className="w-80 h-80 md:w-96 md:h-96 rounded-3xl overflow-hidden shadow-2xl"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="h-full min-h-[300px] p-0 md:p-8 flex items-center justify-center"
               >
                 <img
-                  src="/davidfundador.jpg"
-                  alt="David Nahuel Alvarez - Fundador de Refuerzo Digital"
-                  className="w-full h-full object-cover object-center"
+                  src="/NahuelDavidAlvarez.jpg"
+                  alt="David Nahuel Alvarez - Fundador"
+                  className="w-full max-w-sm h-auto object-cover object-center rounded-3xl shadow-lg transform hover:scale-105 transition-transform duration-500"
                 />
               </motion.div>
-            </motion.div>
 
-            {/* Descripción */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="space-y-6"
-            >
-              <div>
-                <h3 className="text-3xl font-bold text-primary mb-4">
-                  David Nahuel Alvarez
-                </h3>
-                {/*                <p className="text-xl text-accent font-semibold mb-6">
-                  Fundador
-                </p> */}
-              </div>
-
-              <div className="space-y-4 text-primary leading-relaxed">
-                <p>
-                  Cuento con más de diez años de experiencia en el mundo
-                  digital, financiero y del marketing, incluyendo proyectos para
-                  bancos y grandes empresas. Eso me permitió entender cómo
-                  trabajan los equipos a gran escala y qué necesita realmente un
-                  negocio para crecer online.
-                </p>
-                <p>
-                  Como desarrollador con enfoque estratégico, traduzco objetivos
-                  comerciales en soluciones digitales concretas. Evito
-                  tecnicismos innecesarios y me enfoco en lo que realmente
-                  importa: diseñar soluciones para que tu marca gane
-                  visibilidad, atraiga clientes y crezca.
-                </p>
-                <p>
-                  Acompaño a profesionales, emprendedores y empresas que buscan
-                  destacarse en el entorno digital. Ofrezco soluciones
-                  personalizadas, pensadas para cada etapa del negocio, con una
-                  visión clara: generar crecimiento real y sostenido.
-                </p>
-              </div>
-
-              {/* Certificaciones o habilidades */}
+              {/* Text Column */}
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.8 }}
-                className="pt-6"
+                className="p-8 md:p-12 lg:p-16 space-y-6"
               >
-                <h4 className="font-semibold text-primary mb-3">
-                  Especialidades:
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    'Creacion de Webs',
-                    'Diseño',
-                    'Wordpress',
-                    'WooCommerce',
-                    'Shopify',
-                    'SEO',
-                    'Google Ads',
-                    'Creacion de Apps',
-                    'Redes Sociales',
-                    'Facebook Ads',
-                    'Campañas Estrategicas'
-                  ].map((skill, index) => (
-                    <motion.span
-                      key={skill}
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.3, delay: 0.9 + index * 0.1 }}
-                      className="px-3 py-1 bg-primary text-base-100 rounded-full text-sm font-medium"
-                    >
-                      {skill}
-                    </motion.span>
-                  ))}
+                <div>
+                  <h3 className="text-3xl lg:text-4xl font-bold text-primary mb-2">
+                    Nahuel David Alvarez
+                  </h3>
+                  <p className="text-xl text-accent font-medium">Desarrollador Web y Fundador</p>
+                </div>
+
+                <div className="space-y-4 text-primary opacity-80 leading-relaxed font-sans">
+                  <p>
+                    Con más de diez años de trayectoria en el sector digital y corporativo, incluyendo colaboraciones estratégicas en la industria bancaria y grandes empresas, David fundó Alva Soluciones para cerrar la brecha entre la complejidad tecnológica y el éxito empresarial.
+                  </p>
+                  <p>
+                    "Entendemos que detrás de cada desarrollo hay un negocio que necesita resultados. Nuestra misión es ser el socio tecnológico que traduce esa necesidad en sistemas robustos y experiencias digitales memorables."
+                  </p>
+                </div>
+
+                <div className="pt-4 flex flex-wrap gap-2">
+                  <span className="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold">Full Stack Development</span>
+                  <span className="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold">Tech Leadership</span>
+                  <span className="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold">Digital Strategy</span>
                 </div>
               </motion.div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -385,3 +295,114 @@ export function Home() {
     </div>
   )
 }
+
+<section
+  id="about"
+  className="py-20 bg-gradient-to-br from-base-200 to-base-100 scroll-mt-20"
+>
+  <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+    {/* Header - Alva Soluciones */}
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-100px' }}
+      transition={{ duration: 0.8 }}
+      className="text-center mb-20"
+    >
+      <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+        Sobre Nosotros
+      </h2>
+      <p className="text-xl text-neutral max-w-4xl mx-auto leading-relaxed">
+        En <span className="font-bold text-primary">Alva Soluciones</span>,
+        somos una startup de servicios digitales enfocada en transformar ideas en activos digitales rentables.
+        Combinamos tecnología de vanguardia con visión estratégica para impulsar el crecimiento de negocios, emprendedores y empresas.
+      </p>
+    </motion.div>
+
+    {/* Pillars / Values Section */}
+    <div className="grid md:grid-cols-3 gap-8 mb-20">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.1 }}
+        className="bg-base-100 p-8 rounded-2xl shadow-lg border-t-4 border-primary text-center"
+      >
+        <h3 className="text-2xl font-bold text-primary mb-4">Innovación</h3>
+        <p className="text-neutral">Aplicamos las últimas tecnologías y tendencias para mantener a nuestros clientes por delante de la competencia.</p>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2 }}
+        className="bg-base-100 p-8 rounded-2xl shadow-lg border-t-4 border-primary text-center"
+      >
+        <h3 className="text-2xl font-bold text-primary mb-4">Estrategia</h3>
+        <p className="text-neutral">No solo desarrollamos software; creamos soluciones alineadas con objetivos comerciales claros y medibles.</p>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.3 }}
+        className="bg-base-100 p-8 rounded-2xl shadow-lg border-t-4 border-primary text-center"
+      >
+        <h3 className="text-2xl font-bold text-primary mb-4">Calidad</h3>
+        <p className="text-neutral">Código limpio, diseño premium y una experiencia de usuario optimizada son nuestros estándares no negociables.</p>
+      </motion.div>
+    </div>
+
+    {/* Founder Section */}
+    <div className="bg-base-100 rounded-3xl shadow-xl overflow-hidden">
+      <div className="grid lg:grid-cols-2 items-center">
+        {/* Image Column */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="h-full min-h-[300px] p-0 md:p-8 flex items-center justify-center"
+        >
+          <img
+            src="/NahuelDavidAlvarez.jpg"
+            alt="David Nahuel Alvarez - Fundador"
+            className="w-full max-w-sm h-auto object-cover object-center rounded-3xl shadow-lg transform hover:scale-105 transition-transform duration-500"
+          />
+        </motion.div>
+
+        {/* Text Column */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="p-8 md:p-12 lg:p-16 space-y-6"
+        >
+          <div>
+            <h3 className="text-3xl lg:text-4xl font-bold text-primary mb-2">
+              Nahuel David Alvarez
+            </h3>
+            <p className="text-xl text-accent font-medium">Desarrollador Web y Fundador</p>
+          </div>
+
+          <div className="space-y-4 text-primary opacity-80 leading-relaxed font-sans">
+            <p>
+              Con más de diez años de trayectoria en el sector digital y corporativo, incluyendo colaboraciones estratégicas en la industria bancaria y grandes empresas, David fundó Alva Soluciones para cerrar la brecha entre la complejidad tecnológica y el éxito empresarial.
+            </p>
+            <p>
+              "Entendemos que detrás de cada desarrollo hay un negocio que necesita resultados. Nuestra misión es ser el socio tecnológico que traduce esa necesidad en sistemas robustos y experiencias digitales memorables."
+            </p>
+          </div>
+
+          <div className="pt-4 flex flex-wrap gap-2">
+            <span className="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold">Full Stack Development</span>
+            <span className="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold">Tech Leadership</span>
+            <span className="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold">Digital Strategy</span>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Contact Section */ }
+<Contact />

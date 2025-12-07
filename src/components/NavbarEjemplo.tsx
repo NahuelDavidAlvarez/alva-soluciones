@@ -19,7 +19,7 @@ const NavbarEjemplo: React.FC<NavbarEjemploProps> = ({ bgColor, textColor, logoT
           <a href="#testimonios" className="hover:underline">Testimonios</a>
           <a href="#contacto" className="hover:underline">Contacto</a>
           <Link to="/" className="hover:underline">
-            Volver a Refuerzo Digital
+            Volver a Alva Soluciones
           </Link>
         </div>
       </div>

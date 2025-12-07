@@ -16,6 +16,7 @@ module.exports = {
         sans: ['Inter', 'sans-serif'],
         serif: ['EB Garamond', 'serif'],
         body: ['Roboto', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       }
     }
   },

@@ -103,7 +103,7 @@ export function Contact() {
               Tu visión, nuestra estrategia. Resultados que escalan.
             </p>
             <p>
-              &copy; {new Date().getFullYear()} Refuerzo Digital. Todos los
+              &copy; {new Date().getFullYear()} Alva Soluciones. Todos los
               derechos reservados.
             </p>
           </div>
