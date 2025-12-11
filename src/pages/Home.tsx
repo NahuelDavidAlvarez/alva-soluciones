@@ -98,7 +98,7 @@ export function Home() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-xl md:text-2xl text-primary mb-8 leading-relaxed"
           >
-            Refuerzo tu presencia online con creatividad, datos y acción
+            Refuerzo tu presencia online con creatividad, innovación y acción
           </motion.p>
 
           <motion.div
