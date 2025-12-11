@@ -195,7 +195,7 @@ export function Home() {
             <p className="text-xl text-neutral max-w-4xl mx-auto leading-relaxed">
               En <span className="font-bold text-primary">Alva Soluciones</span>,
               somos una startup de servicios digitales enfocada en transformar ideas en activos digitales rentables.
-              Combinamos tecnología de vanguardia con visión estratégica para impulsar el crecimiento de negocios, emprendedores y empresas.
+              Combinamos tecnología de vanguardia con visión estratégica para impulsar el crecimiento de negocios, profesionales y empresas.
             </p>
           </motion.div>
           {/* Pillars / Values Section */}
@@ -265,18 +265,18 @@ export function Home() {
 
                 <div className="space-y-4 text-primary opacity-80 leading-relaxed font-sans">
                   <p>
-                    Con más de diez años de trayectoria en el sector digital y corporativo, incluyendo colaboraciones estratégicas en la industria bancaria y grandes empresas, David fundó Alva Soluciones para cerrar la brecha entre la complejidad tecnológica y el éxito empresarial.
+                    Con más de diez años de trayectoria en el sector digital y corporativo, incluyendo colaboraciones estratégicas en la industria bancaria, decidí fundar Alva Soluciones para ayudar a cerrar la brecha entre la complejidad tecnológica y el éxito empresarial.
                   </p>
                   <p>
-                    "Entendemos que detrás de cada desarrollo hay un negocio que necesita resultados. Nuestra misión es ser el socio tecnológico que traduce esa necesidad en sistemas robustos y experiencias digitales memorables."
+                    "Entiendo que detrás de cada desarrollo hay un negocio que necesita resultados. Nuestra misión es ser el socio tecnológico que traduce esas necesidades en sistemas robustos y experiencias digitales memorables."
                   </p>
                 </div>
 
-                <div className="pt-4 flex flex-wrap gap-2">
+                {/*                 <div className="pt-4 flex flex-wrap gap-2">
                   <span className="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold">Full Stack Development</span>
                   <span className="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold">Tech Leadership</span>
                   <span className="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold">Digital Strategy</span>
-                </div>
+                </div> */}
               </motion.div>
             </div>
           </div>
