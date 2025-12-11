@@ -228,7 +228,7 @@ export function Home() {
               className="bg-base-100 p-8 rounded-2xl shadow-lg border-t-4 border-primary text-center"
             >
               <h3 className="text-2xl font-bold text-primary mb-4">Calidad</h3>
-              <p className="text-neutral">Código limpio, diseño premium y una experiencia de usuario optimizada son nuestros estándares no negociables.</p>
+              <p className="text-neutral">Código limpio, diseño premium y una experiencia de usuario optimizada son nuestros estándares premium.</p>
             </motion.div>
           </div>
 
