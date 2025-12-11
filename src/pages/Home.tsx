@@ -3,9 +3,9 @@ import { useState, useEffect, useRef } from 'react'
 import { Contact } from '../components/Contact'
 import {
   FaLaptopCode,
-  FaChartLine,
-  FaChartBar,
-  FaPaintBrush
+  FaPaintBrush,
+  FaMobileAlt,
+  FaRobot
 } from 'react-icons/fa'
 
 export function Home() {
@@ -37,17 +37,18 @@ export function Home() {
         'Sitios web modernos y responsivos que reflejan la esencia de tu marca con tecnología de vanguardia.',
       icon: <FaLaptopCode className="text-4xl text-primary" />
     },
+
     {
-      title: 'Marketing Digital',
+      title: 'Aplicaciones',
       description:
-        'Estrategias personalizadas para hacer crecer tu presencia digital y alcanzar nuevas alturas en el mercado.',
-      icon: <FaChartLine className="text-4xl text-primary" />
+        'Apps móviles intuitivas y potentes que conectan con tus usuarios en cualquier momento y lugar.',
+      icon: <FaMobileAlt className="text-4xl text-primary" />
     },
     {
-      title: 'SEO & Analiticas',
+      title: 'Automatizaciones',
       description:
-        'Optimización para motores de búsqueda y análisis de datos para escalar tu negocio de manera inteligente.',
-      icon: <FaChartBar className="text-4xl text-primary" />
+        'Optimizamos tus procesos operativos mediante flujos inteligentes para ahorrar tiempo y recursos.',
+      icon: <FaRobot className="text-4xl text-primary" />
     },
     {
       title: 'Diseño',
